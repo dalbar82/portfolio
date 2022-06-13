@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Projects from "./Projects";
 import Socials from "./Socials";
+import profileImage from './assets/dog.jpeg'
 
 class App extends Component{
   state = {
@@ -14,6 +15,7 @@ class App extends Component{
   render() {
     return(
       <div>
+        <img src={profileImage} alt="image" className="profile-image"/>
         <h1>Hello</h1>
         <p>My aname is Damian</p>
         <p>Code is life</p>
