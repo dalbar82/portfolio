@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Projects from "./Projects";
 import Socials from "./Socials";
-import profileImage from './assets/dog.jpeg'
+import profileImage from '../assets/dog.jpeg'
+import Title from "./Title";
 
 class App extends Component{
   state = {
@@ -15,10 +16,11 @@ class App extends Component{
   render() {
     return(
       <div>
-        <img src={profileImage} alt="image" className="profile-image"/>
+        <img src={profileImage} className="profile-image"/>
         <h1>Hello</h1>
-        <p>My aname is Damian</p>
+        <p>My name is Damian</p>
         <p>Code is life</p>
+        <Title />
         {this.state.displayBio ? (
         <div>
           <p>I live in woodend</p>
